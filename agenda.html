@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main2.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans|Roboto|Ubuntu&display=swap" rel="stylesheet">
+    <title>Agenda Personal</title>
+</head>
+<body id="fondo">
+    <header>
+        <p id="borde">Bienvenido a tu agenda personal, a continuación podrás empezar a agregar contactos en ella.</p>
+        <p>Los pasos son muy sencillos, primero debes completar la información solicitada abajo y luego clickea en agregar contacto.</p>
+    </header>
+    <section id="agregar" class="ingreso">
+        <form action="#contactos" method="POST">
+            <label for="">Datos de Contacto:</label>
+            <input type="text" placeholder="nombre" name="nombre" id="nombre">
+            <input type="text" placeholder="apellido" name="apellido" id="apellido">
+            <input type="email" placeholder="correo@correo.com" name="correo" id="correo">
+            <input type="text" placeholder="domicilio" name="domicilio" id="domicilio">
+            <input type="date" placeholder="fecha de cumpleaños" name="cumple" id="cumple">
+            <input type="submit" id="boton" value="Agregar Contacto">
+        </form>
+    </section>
+    <section class="agenda">
+        <ul id="thead">
+            <li>ID</li>
+            <li>Apellido y Nombre</li>
+            <li>Correo</li>
+            <li>Domicilio</li>
+            <li>Fecha de Cumpleaños</li>
+        </ul>
+        <div id="contactos">
+
+        </div>
+
+    </table>
+    </section>
+    <script type="text/javascript" src="js/main2.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

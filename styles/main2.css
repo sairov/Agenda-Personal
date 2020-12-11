@@ -1,0 +1,177 @@
+/*******ROOTS*******/
+
+:root {
+    --colorPrincipal: #929EA6;
+    --blanco: #FFF;
+    --auxiliar: #F27B13;
+    --fondo: #F2F2F2;
+    --navegacion: #011826;
+    --borde: #436073;
+    --boton: #E7E8EC;
+    --NotoSans: 'Noto Sans', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --Ubuntu: 'Ubuntu', sans-serif;
+    --Josefin: 'Josefin Sans', sans-serif;  
+}
+
+
+/******GLOBALES*****/
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    }
+
+  *, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+  }
+
+  body {
+      width: 100%;
+      margin: 0;
+      /* background-color: var(--fondo); */
+      color: #FFF;
+      background: linear-gradient(110deg, rgba(253,116,0,1) 0%,rgba(255,103,15,0.9) 31%,rgba(255,103,15,0.85) 59%,rgba(255,103,15,0.82) 100%);
+      font-family: var(--NotoSans);
+  }
+
+  header {
+    
+    text-align: left;
+    width: 100%;
+  }
+
+  header h1 {
+    box-shadow: 2px 2px 2px #FFF;
+    background-color: var(--fondo);
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: var(--navegacion);
+    padding: 10px 10px 5px;
+    margin-bottom: 1rem;
+  }
+
+
+  header p {
+    color: var(--borde);
+    background-color: var(--boton);
+    margin: 0 auto;
+    padding: 1rem 20px;
+    letter-spacing: 1.6px;
+    width: 80%;
+  }
+
+  #borde {
+      border-radius: 20px 20px 0 0;
+  }
+
+  .ingreso {
+    color: var(--colorPrincipal);
+    background-color: var(--boton);
+    margin: 0 auto;
+    padding: 1rem 0 0.4rem;
+    border-radius: 0 0 20px 20px;
+    width: 80%;
+    height: auto;
+  }
+
+  .ingreso form {
+     height: auto;
+  }
+
+  .ingreso form input, form label, form button, form select{
+    margin: 0 auto;
+    display: block;
+  }
+
+  .ingreso form label {
+    text-align: center;
+    font-size: 20px;
+    color: var(--borde);
+    letter-spacing: 1.5px;
+  }
+
+  .ingreso form input {
+    color: var(--borde);
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px 2px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--colorPrincipal);
+    margin: 1.3rem auto;
+    width: 22rem;
+  }
+ 
+  .ingreso form input:focus{
+    outline: 0px;
+    border-bottom: var(--borde) 1.5px solid;
+  }
+
+  .ingreso form input:focus::placeholder {
+    color: transparent;
+  }
+
+  #color {
+    margin: .5rem auto;
+    border: none;
+    padding: 0;
+    height: 35px;
+  }
+
+  #boton {
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: #A60303;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.4s;
+    width: 15rem;
+  }
+
+  #boton:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .agenda {
+    margin: 1rem auto;
+    width: 95%;
+    }
+
+    .agenda ul{
+        list-style: none;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+     .agenda ul > li:nth-child(1) {
+        width: 15rem;
+    } 
+
+    .agenda ul > li:nth-child(5) {
+        width: 50rem;
+    } 
+
+    .agenda ul li {
+        border: 1px solid var(--blanco);
+        width: 100%;
+        padding: 2px 0;
+        background-color: var(--colorPrincipal);
+    }
+
+    #contactos ul li {
+        background-color: var(--borde);
+        font-family: var(--Ubuntu);
+    }
+
+
+  /******* AGENDA ********/
